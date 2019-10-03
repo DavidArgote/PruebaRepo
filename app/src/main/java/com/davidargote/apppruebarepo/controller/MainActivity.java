@@ -12,6 +12,7 @@ import com.davidargote.apppruebarepo.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnDavid;
+    private Button btnCristhian;
 
     private Button btnSantiago;
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnDavid = findViewById(R.id.btnDavid);
         btnDavid.setOnClickListener(this);
+        btnCristhian = findViewById(R.id.btnCristhian);
+        btnCristhian.setOnClickListener(this);
 
         btnSantiago = findViewById(R.id.btnSantiago);
         btnSantiago.setOnClickListener(this);
@@ -42,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btnDavid:
                 Toast.makeText(this, "Boton David", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnCristhian:
+                Toast.makeText(this, "Boton Cristhian", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnSantiago:
                 Toast.makeText(this,"Boton Santiago",Toast.LENGTH_SHORT).show();
