@@ -2,6 +2,7 @@ package com.davidargote.apppruebarepo.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,8 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btnDavid;
     private Button btnCristhian;
-
     private Button btnSantiago;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnDavid = findViewById(R.id.btnDavid);
         btnDavid.setOnClickListener(this);
+
         btnCristhian = findViewById(R.id.btnCristhian);
         btnCristhian.setOnClickListener(this);
 
@@ -44,11 +46,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
 
             case R.id.btnDavid:
-                Toast.makeText(this, "Boton David", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, TekePhotoDavidActivity.class));
                 break;
             case R.id.btnCristhian:
                 Toast.makeText(this, "Boton Cristhian", Toast.LENGTH_SHORT).show();
                 break;
+
             case R.id.btnSantiago:
                 Toast.makeText(this,"Boton Santiago",Toast.LENGTH_SHORT).show();
                 break;
