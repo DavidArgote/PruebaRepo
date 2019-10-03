@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, TekePhotoDavidActivity.class));
                 break;
             case R.id.btnCristhian:
-                Toast.makeText(this, "Boton Cristhian", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,TakePhotoCristhianActivity.class));
                 break;
 
             case R.id.btnSantiago:
