@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnDavid;
     private Button btnSergio;
 
+    private Button btnSantiago;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDavid.setOnClickListener(this);
         btnSergio = findViewById(R.id.btnSergio);
         btnSergio.setOnClickListener(this);
+
+        btnSantiago = findViewById(R.id.btnSantiago);
+        btnSantiago.setOnClickListener(this);
 
     }
 
